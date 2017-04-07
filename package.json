@@ -1,6 +1,6 @@
 {
   "name": "bisu-react-modal",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "bisu-react-modal React component",
   "main": "lib/index.js",
   "module": "es/index.js",

@@ -1,7 +1,10 @@
 .ReactModal__Overlay {
 	z-index: 2000;
 }
-
+/* Remove scroll on the body when react-modal is open */
+.ReactModal__Body--open {
+    overflow: hidden;
+}
 // react-modal
 .bisu--react-modal.modal-overlay {
 	overflow-x: hidden;

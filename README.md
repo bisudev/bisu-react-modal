@@ -12,7 +12,7 @@ then include this scss file to your main scss
 `@import '~bisu-react-modal/lib/style.scss';`
 
 ## Usage
-```
+```jsx
 import React, { Component } from 'react'
 import Modal from 'bisu-react-modal'
 
@@ -27,7 +27,7 @@ class ShowModal extends Component {
 
   render() {
     const { showModal } = this.state
-    
+
     return (
       <div>
         <button type="button" onClick={() => this.setState({ showModal: true })}>Show Modal</button>
