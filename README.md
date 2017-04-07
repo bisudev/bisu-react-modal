@@ -4,7 +4,13 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe bisu-react-modal here.
+Org usage for react-modal.
+
+## Installation
+`npm install --save bisu-react-modal`
+
+## Usage
+
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
