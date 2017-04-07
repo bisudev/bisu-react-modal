@@ -11,7 +11,7 @@ const Modal = ({ children, handleClose, isOpen, modalClass }) => {
 
   const cl = cn('modal-dialog', modalClass)
   return (
-    <div className="modal modal-over">
+    <div className="bisu--react-modal modal modal-over">
       <ReactModal
         className={cl}
         overlayClassName="modal-overlay"
