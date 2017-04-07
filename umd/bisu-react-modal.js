@@ -1,5 +1,5 @@
 /*!
- * bisu-react-modal v1.0.1 - https://github.com/bisudev/bisu-react-modal#readme
+ * bisu-react-modal v1.0.2 - https://github.com/bisudev/bisu-react-modal#readme
  * MIT Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -10154,51 +10154,42 @@ var Modal = function Modal(_ref) {
 
   var cl = __WEBPACK_IMPORTED_MODULE_2_classnames___default()('modal-dialog', modalClass);
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'div',
-    { className: 'bisu--react-modal modal modal-over', __source: {
+    __WEBPACK_IMPORTED_MODULE_1_react_modal___default.a,
+    {
+      className: cl,
+      overlayClassName: 'bisu--react-modal modal-overlay',
+      onRequestClose: handleClose,
+      contentLabel: 'modal',
+      isOpen: true,
+      __source: {
         fileName: _jsxFileName,
         lineNumber: 14
       },
       __self: _this
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_1_react_modal___default.a,
-      {
-        className: cl,
-        overlayClassName: 'modal-overlay',
-        onRequestClose: handleClose,
-        contentLabel: 'modal',
-        isOpen: true,
-        __source: {
+      'div',
+      { className: 'modal-content', __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 21
         },
         __self: _this
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'modal-content', __source: {
+        { className: 'modal-body', __source: {
             fileName: _jsxFileName,
             lineNumber: 22
           },
           __self: _this
         },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          { className: 'modal-body', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 23
-            },
-            __self: _this
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__close__["a" /* default */], { close: handleClose, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23
           },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__close__["a" /* default */], { close: handleClose, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 24
-            },
-            __self: _this
-          }),
-          children
-        )
+          __self: _this
+        }),
+        children
       )
     )
   );

@@ -11,22 +11,20 @@ const Modal = ({ children, handleClose, isOpen, modalClass }) => {
 
   const cl = cn('modal-dialog', modalClass)
   return (
-    <div className="bisu--react-modal modal modal-over">
-      <ReactModal
-        className={cl}
-        overlayClassName="modal-overlay"
-        onRequestClose={handleClose}
-        contentLabel="modal"
-        isOpen
-      >
-        <div className="modal-content">
-          <div className="modal-body">
-            <Close close={handleClose} />
-            {children}
-          </div>
+    <ReactModal
+      className={cl}
+      overlayClassName="bisu--react-modal modal-overlay"
+      onRequestClose={handleClose}
+      contentLabel="modal"
+      isOpen
+    >
+      <div className="modal-content">
+        <div className="modal-body">
+          <Close close={handleClose} />
+          {children}
         </div>
-      </ReactModal>
-    </div>
+      </div>
+    </ReactModal>
   )
 }
 

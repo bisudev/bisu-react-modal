@@ -16,26 +16,22 @@ var Modal = function Modal(_ref) {
 
   var cl = cn('modal-dialog', modalClass);
   return React.createElement(
-    'div',
-    { className: 'bisu--react-modal modal modal-over' },
+    ReactModal,
+    {
+      className: cl,
+      overlayClassName: 'bisu--react-modal modal-overlay',
+      onRequestClose: handleClose,
+      contentLabel: 'modal',
+      isOpen: true
+    },
     React.createElement(
-      ReactModal,
-      {
-        className: cl,
-        overlayClassName: 'modal-overlay',
-        onRequestClose: handleClose,
-        contentLabel: 'modal',
-        isOpen: true
-      },
+      'div',
+      { className: 'modal-content' },
       React.createElement(
         'div',
-        { className: 'modal-content' },
-        React.createElement(
-          'div',
-          { className: 'modal-body' },
-          React.createElement(Close, { close: handleClose }),
-          children
-        )
+        { className: 'modal-body' },
+        React.createElement(Close, { close: handleClose }),
+        children
       )
     )
   );
