@@ -17,7 +17,7 @@ var Modal = function Modal(_ref) {
   var cl = cn('modal-dialog', modalClass);
   return React.createElement(
     'div',
-    { className: 'modal modal-over' },
+    { className: 'bisu--react-modal modal modal-over' },
     React.createElement(
       ReactModal,
       {

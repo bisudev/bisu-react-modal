@@ -1,5 +1,5 @@
 /*!
- * bisu-react-modal v1.0.0 - https://github.com/bisudev/bisu-react-modal#readme
+ * bisu-react-modal v1.0.1 - https://github.com/bisudev/bisu-react-modal#readme
  * MIT Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -10155,7 +10155,7 @@ var Modal = function Modal(_ref) {
   var cl = __WEBPACK_IMPORTED_MODULE_2_classnames___default()('modal-dialog', modalClass);
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    { className: 'modal modal-over', __source: {
+    { className: 'bisu--react-modal modal modal-over', __source: {
         fileName: _jsxFileName,
         lineNumber: 14
       },
