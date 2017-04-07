@@ -1,5 +1,5 @@
 {
-  "name": "bisu-react-modal",
+  "name": "@bisudev/bisu-react-modal",
   "version": "1.0.0",
   "description": "bisu-react-modal React component",
   "main": "lib/index.js",
@@ -32,11 +32,20 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Melvin Soldia <melvinsoldia@gmail.com> (http://twitter.com/soldio)",
+  "homepage": "https://github.com/bisudev/bisu-react-modal#readme",
   "license": "MIT",
-  "repository": "git@github.com:bisudev/bisu-react-modal.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bisudev/bisu-react-modal.git"
+  },
   "keywords": [
     "react-component"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/bisudev/bisu-react-modal/issues"
+  },
+  "directories": {
+    "test": "tests"
+  }
 }
