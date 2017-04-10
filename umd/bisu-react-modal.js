@@ -1,5 +1,5 @@
 /*!
- * bisu-react-modal v1.0.3 - https://github.com/bisudev/bisu-react-modal#readme
+ * bisu-react-modal v1.0.4 - https://github.com/bisudev/bisu-react-modal#readme
  * MIT Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {

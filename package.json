@@ -1,6 +1,6 @@
 {
   "name": "bisu-react-modal",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "bisu-react-modal React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -26,13 +26,12 @@
     "react-modal": "1.7.3"
   },
   "peerDependencies": {
-    "react": "15.x"
-  },
-  "devDependencies": {
+    "react": "15.x",
     "nwb": "0.15.x",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
+  "devDependencies": {},
   "author": "Melvin Soldia <melvinsoldia@gmail.com> (http://twitter.com/soldio)",
   "homepage": "https://github.com/bisudev/bisu-react-modal#readme",
   "license": "MIT",

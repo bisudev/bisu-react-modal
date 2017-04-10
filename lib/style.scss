@@ -20,4 +20,17 @@
   .modal-dialog {
   	outline: none;
   }
+
+	.modal-body {
+		padding: 20px;
+
+		.modal-close {
+			position: absolute;
+			right: 20px;
+		}
+
+		.modal-footer {
+			padding: 25px 0 0 0;
+		}
+	}
 }
