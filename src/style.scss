@@ -5,6 +5,12 @@
 .ReactModal__Body--open {
     overflow: hidden;
 }
+.ReactModalPortal + .ReactModalPortal {
+  .modal-dialog {
+    transform: translate(10px, 10px);
+  }
+}
+
 // react-modal
 .bisu--react-modal.modal-overlay {
 	overflow-x: hidden;
