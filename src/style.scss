@@ -2,9 +2,11 @@
 	z-index: 2000;
 }
 /* Remove scroll on the body when react-modal is open */
+/*
 .ReactModal__Body--open {
     overflow: hidden;
 }
+*/
 .ReactModalPortal + .ReactModalPortal {
   .modal-dialog {
     transform: translate(10px, 10px);
