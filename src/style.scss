@@ -1,44 +1,47 @@
-.ReactModal__Overlay {
-	z-index: 2000;
-}
-/* Remove scroll on the body when react-modal is open */
-/*
-.ReactModal__Body--open {
-    overflow: hidden;
-}
-*/
 .ReactModalPortal + .ReactModalPortal {
-  .modal-dialog {
-    transform: translate(10px, 10px);
+  .bisu--react-modal {
+    transform: translate(20px, 20px);
   }
 }
 
-// react-modal
-.bisu--react-modal.modal-overlay {
-	overflow-x: hidden;
-	overflow-y: auto;
-	background-color: rgba(0,0,0,0.5);
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	outline: none;
+.bisu--react-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.75);
 
-  .modal-dialog {
-  	outline: none;
+  &.dark {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.bisu--react-modal {
+  outline: none;
+
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+
+    & + .close {
+      right: 40px;
+    }
   }
 
-	.modal-body {
-		padding: 20px;
+  .modal-footer {
+    background-color: $gray-lighter;
+    border-radius: 0 0 4px 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.9em;
+  }
 
-		.modal-close {
-			position: absolute;
-			right: 20px;
-		}
-
-		.modal-footer {
-			padding: 25px 0 0 0;
-		}
-	}
+  .modal-body > .modal-footer {
+    margin: 15px -15px -15px -15px;
+  }
 }

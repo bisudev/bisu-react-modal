@@ -1,47 +1,66 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import ReactModal from 'react-modal';
+import Draggable from 'react-draggable';
+import DragIcon from 'react-icons/lib/md/drag-handle';
 import cn from 'classnames';
 
 import Close from './close';
 
 var Modal = function Modal(_ref) {
   var children = _ref.children,
-      handleClose = _ref.handleClose,
+      header = _ref.header,
+      className = _ref.className,
+      overlayClassName = _ref.overlayClassName,
       isOpen = _ref.isOpen,
-      modalClass = _ref.modalClass;
+      withClose = _ref.withClose,
+      sticky = _ref.sticky,
+      footer = _ref.footer,
+      draggable = _ref.draggable,
+      onClose = _ref.onClose;
 
   if (!isOpen) {
     return null;
   }
 
-  var cl = cn('modal-dialog', modalClass);
+  var cl = cn('bisu--react-modal', 'modal-dialog', className);
+  var oc = cn('bisu--react-modal-overlay', overlayClassName);
+
   return React.createElement(
     ReactModal,
     {
       className: cl,
-      overlayClassName: 'bisu--react-modal modal-overlay',
-      onRequestClose: handleClose,
+      overlayClassName: oc,
       contentLabel: 'modal',
+      onRequestClose: onClose,
+      shouldCloseOnOverlayClick: !sticky,
       isOpen: true
     },
     React.createElement(
-      'div',
-      { className: 'modal-content' },
+      Draggable,
+      { handle: '.draggable' },
       React.createElement(
         'div',
-        { className: 'modal-body' },
-        React.createElement(Close, { close: handleClose }),
-        children
+        { className: 'modal-content' },
+        header && React.createElement(
+          'div',
+          { className: 'modal-header' },
+          header
+        ),
+        React.createElement(
+          'div',
+          { className: 'modal-body' },
+          children
+        ),
+        footer,
+        withClose && React.createElement(Close, { onClose: onClose }),
+        draggable && React.createElement(
+          'button',
+          { type: 'button', title: 'drag', className: 'close draggable' },
+          React.createElement(DragIcon, null)
+        )
       )
     )
   );
 };
-
-process.env.NODE_ENV !== "production" ? Modal.propTypes = {
-  children: PropTypes.any,
-  modalClass: PropTypes.string,
-  isOpen: PropTypes.bool,
-  handleClose: PropTypes.func
-} : void 0;
 
 export default Modal;

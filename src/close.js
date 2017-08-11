@@ -1,20 +1,8 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 
-const Close = ({ close }) => (
-  <div className="modal-close">
-    <button
-      type="button"
-      onClick={close}
-      className="close"
-      aria-label="Close"
-    >
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-)
-
-Close.propTypes = {
-  close: PropTypes.func,
-}
+const Close = ({ onClose }) =>
+  <button onClick={onClose} type="button" className="close" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
 
 export default Close

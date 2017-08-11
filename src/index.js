@@ -1,38 +1,58 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import ReactModal from 'react-modal'
+import Draggable from 'react-draggable'
+import DragIcon from 'react-icons/lib/md/drag-handle'
 import cn from 'classnames'
 
 import Close from './close'
 
-const Modal = ({ children, handleClose, isOpen, modalClass }) => {
+const Modal = ({
+  children,
+  header,
+  className,
+  overlayClassName,
+  isOpen,
+  withClose,
+  sticky,
+  footer,
+  draggable,
+  onClose,
+}) => {
   if (!isOpen) {
     return null
   }
 
-  const cl = cn('modal-dialog', modalClass)
+  const cl = cn('bisu--react-modal', 'modal-dialog', className)
+  const oc = cn('bisu--react-modal-overlay', overlayClassName)
+
   return (
     <ReactModal
       className={cl}
-      overlayClassName="bisu--react-modal modal-overlay"
-      onRequestClose={handleClose}
+      overlayClassName={oc}
       contentLabel="modal"
+      onRequestClose={onClose}
+      shouldCloseOnOverlayClick={!sticky}
       isOpen
     >
-      <div className="modal-content">
-        <div className="modal-body">
-          <Close close={handleClose} />
-          {children}
+      <Draggable handle=".draggable">
+        <div className="modal-content">
+          {header &&
+            <div className="modal-header">
+              {header}
+            </div>}
+          <div className="modal-body">
+            {children}
+          </div>
+          {footer}
+          {withClose && <Close onClose={onClose} />}
+          {draggable &&
+            <button type="button" title="drag" className="close draggable">
+              <DragIcon />
+            </button>}
         </div>
-      </div>
+      </Draggable>
     </ReactModal>
   )
-}
-
-Modal.propTypes = {
-  children: PropTypes.any,
-  modalClass: PropTypes.string,
-  isOpen: PropTypes.bool,
-  handleClose: PropTypes.func,
 }
 
 export default Modal
