@@ -24,6 +24,25 @@
 .bisu--react-modal {
   outline: none;
 
+  &.confirm,
+  &.alert {
+    .modal-body {
+      padding: 10px 20px 30px 20px;
+    }
+
+    .icon {
+      font-size: 58px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &.confirm .icon {
+    color: lighten($brand-danger, 15%);
+  }
+  &.alert .icon {
+    color: lighten($brand-info, 15%);
+  }
+
   .close {
     position: absolute;
     right: 20px;

@@ -18,10 +18,6 @@ var Modal = function Modal(_ref) {
       draggable = _ref.draggable,
       onClose = _ref.onClose;
 
-  if (!isOpen) {
-    return null;
-  }
-
   var cl = cn('bisu--react-modal', 'modal-dialog', className);
   var oc = cn('bisu--react-modal-overlay', overlayClassName);
 
@@ -33,7 +29,7 @@ var Modal = function Modal(_ref) {
       contentLabel: 'modal',
       onRequestClose: onClose,
       shouldCloseOnOverlayClick: !sticky,
-      isOpen: true
+      isOpen: isOpen
     },
     React.createElement(
       Draggable,
@@ -64,3 +60,8 @@ var Modal = function Modal(_ref) {
 };
 
 export default Modal;
+
+import _Confirm from './confirm';
+export { _Confirm as Confirm };
+import _Alert from './alert';
+export { _Alert as Alert };

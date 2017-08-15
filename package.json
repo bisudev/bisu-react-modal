@@ -1,6 +1,6 @@
 {
   "name": "bisu-react-modal",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "bisu-react-modal React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -16,7 +16,8 @@
   "dependencies": {
     "classnames": "2.2.5",
     "react-draggable": "2.2.6",
-    "react-icons": "2.2.5"
+    "react-icons": "2.2.5",
+    "react-modal": "2.2.4"
   },
   "peerDependencies": {},
   "devDependencies": {
@@ -33,7 +34,6 @@
     "nwb-sass": "0.8.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-modal": "2.2.2",
     "react-redux": "5.0.6",
     "react-redux-form": "1.14.0",
     "redux": "3.7.2",

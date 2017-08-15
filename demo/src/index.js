@@ -7,6 +7,9 @@ import WithClose from './with-close'
 import Sticky from './sticky'
 import Stacked from './stacked'
 
+import ConfirmExample from './confirm'
+import AlertExample from './alert'
+
 import './demo.scss'
 
 class Demo extends Component {
@@ -89,6 +92,9 @@ class Demo extends Component {
               onClose={this._closeModal.bind(this, 3)}
             />
             <hr />
+            <ConfirmExample />
+            <hr />
+            <AlertExample />
             <h1>Placeholder</h1>
             <h1>Placeholder</h1>
             <h1>Placeholder</h1>

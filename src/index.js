@@ -18,10 +18,6 @@ const Modal = ({
   draggable,
   onClose,
 }) => {
-  if (!isOpen) {
-    return null
-  }
-
   const cl = cn('bisu--react-modal', 'modal-dialog', className)
   const oc = cn('bisu--react-modal-overlay', overlayClassName)
 
@@ -32,7 +28,7 @@ const Modal = ({
       contentLabel="modal"
       onRequestClose={onClose}
       shouldCloseOnOverlayClick={!sticky}
-      isOpen
+      isOpen={isOpen}
     >
       <Draggable handle=".draggable">
         <div className="modal-content">
@@ -56,3 +52,6 @@ const Modal = ({
 }
 
 export default Modal
+
+export Confirm from './confirm'
+export Alert from './alert'
