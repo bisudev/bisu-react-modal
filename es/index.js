@@ -59,6 +59,10 @@ var Modal = function Modal(_ref) {
   );
 };
 
+Modal.defaultProps = {
+  overlayClassName: 'dark'
+};
+
 export default Modal;
 
 import _Confirm from './confirm';

@@ -31,6 +31,9 @@ const Default = ({ isOpen, onClose }) => {
       <h1>Default Modal</h1>
       <h1>Default Modal</h1>
       <h1>Default Modal</h1>
+      <fieldset className="modal-footer">
+        <button className="btn btn-success">Save</button>
+      </fieldset>
     </Modal>
   )
 }

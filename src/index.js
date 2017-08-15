@@ -51,6 +51,10 @@ const Modal = ({
   )
 }
 
+Modal.defaultProps = {
+  overlayClassName: 'dark',
+}
+
 export default Modal
 
 export Confirm from './confirm'

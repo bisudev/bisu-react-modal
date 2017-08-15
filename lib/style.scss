@@ -56,12 +56,12 @@
   .modal-footer {
     background-color: $gray-lighter;
     border-radius: 0 0 4px 4px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-size: 0.9em;
+    padding: 10px 15px;
   }
 
-  .modal-body > .modal-footer {
+  .modal-body .modal-footer {
     margin: 15px -15px -15px -15px;
+    padding: 10px 15px;
   }
 }

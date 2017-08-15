@@ -1,5 +1,5 @@
 /*!
- * bisu-react-modal v1.0.9 - https://github.com/bisudev/bisu-react-modal#readme
+ * bisu-react-modal v1.0.10 - https://github.com/bisudev/bisu-react-modal#readme
  * MIT Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -10640,6 +10640,10 @@ var Modal = function Modal(_ref) {
       )
     )
   );
+};
+
+Modal.defaultProps = {
+  overlayClassName: 'dark'
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Modal);
