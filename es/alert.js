@@ -33,7 +33,11 @@ var Alert = function Alert(_ref) {
         { className: 'modal-footer' },
         React.createElement(
           'button',
-          { type: 'button', onClick: onConfirm, className: 'btn btn-info' },
+          {
+            type: 'button',
+            onClick: onConfirm,
+            className: 'btn btn-info btn-sm'
+          },
           okText
         )
       )
