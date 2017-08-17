@@ -18,7 +18,7 @@ const Confirm = ({ children, onConfirm, onCancel, isOpen }) =>
         {children}
       </div>
       <div className="modal-footer">
-        <button type="button" onClick={onCancel} className="btn btn-default">
+        <button type="button" onClick={onCancel} className="btn btn-link">
           Cancel
         </button>
         <button type="button" onClick={onConfirm} className="btn btn-danger">

@@ -34,7 +34,7 @@ var Confirm = function Confirm(_ref) {
         { className: 'modal-footer' },
         React.createElement(
           'button',
-          { type: 'button', onClick: onCancel, className: 'btn btn-default' },
+          { type: 'button', onClick: onCancel, className: 'btn btn-link' },
           'Cancel'
         ),
         React.createElement(

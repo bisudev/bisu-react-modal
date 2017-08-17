@@ -1,5 +1,5 @@
 /*!
- * bisu-react-modal v1.0.10 - https://github.com/bisudev/bisu-react-modal#readme
+ * bisu-react-modal v1.0.11 - https://github.com/bisudev/bisu-react-modal#readme
  * MIT Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -26137,7 +26137,7 @@ var Confirm = function Confirm(_ref) {
         { className: 'modal-footer' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'button',
-          { type: 'button', onClick: onCancel, className: 'btn btn-default' },
+          { type: 'button', onClick: onCancel, className: 'btn btn-link' },
           'Cancel'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
