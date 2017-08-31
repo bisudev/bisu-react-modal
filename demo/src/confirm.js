@@ -36,6 +36,7 @@ class MyConfirm extends Component {
           isOpen={show}
           onCancel={this._hideModal}
           onConfirm={this._onConfirm}
+          pending
         >
           Are you sure you want to do this?
         </Confirm>

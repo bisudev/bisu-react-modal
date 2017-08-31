@@ -1,6 +1,6 @@
 {
   "name": "bisu-react-modal",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "bisu-react-modal React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -39,7 +39,8 @@
     "redux": "3.7.2",
     "redux-thunk": "2.2.0"
   },
-  "author": "Melvin Soldia <melvinsoldia@gmail.com> (http://twitter.com/soldio)",
+  "author":
+    "Melvin Soldia <melvinsoldia@gmail.com> (http://twitter.com/soldio)",
   "homepage": "https://github.com/bisudev/bisu-react-modal#readme",
   "license": "MIT",
   "repository": {
