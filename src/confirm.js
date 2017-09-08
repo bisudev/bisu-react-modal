@@ -11,7 +11,7 @@ class Confirm extends Component {
   }
 
   render() {
-    const { children, onConfirm, isOpen, pending } = this.props
+    const { children, okText, onConfirm, isOpen, pending } = this.props
     return (
       <ReactModal
         className="bisu--react-modal modal-dialog modal-sm confirm"
@@ -38,15 +38,19 @@ class Confirm extends Component {
             <button
               type="button"
               onClick={onConfirm}
-              className="btn btn-danger"
+              className="btn btn-sm btn-danger"
             >
-              Yes, confirm!
+              {okText}
             </button>
           </fieldset>
         </div>
       </ReactModal>
     )
   }
+}
+
+Confirm.defaultProps = {
+  okText: 'Yes, confirm!',
 }
 
 export default Confirm

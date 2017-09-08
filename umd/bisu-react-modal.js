@@ -1,5 +1,5 @@
 /*!
- * bisu-react-modal v1.0.13 - https://github.com/bisudev/bisu-react-modal#readme
+ * bisu-react-modal v1.0.14 - https://github.com/bisudev/bisu-react-modal#readme
  * MIT Licensed
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -26134,6 +26134,7 @@ var Confirm = function (_Component) {
   Confirm.prototype.render = function render() {
     var _props = this.props,
         children = _props.children,
+        okText = _props.okText,
         onConfirm = _props.onConfirm,
         isOpen = _props.isOpen,
         pending = _props.pending;
@@ -26177,9 +26178,9 @@ var Confirm = function (_Component) {
             {
               type: 'button',
               onClick: onConfirm,
-              className: 'btn btn-danger'
+              className: 'btn btn-sm btn-danger'
             },
-            'Yes, confirm!'
+            okText
           )
         )
       )
@@ -26188,6 +26189,10 @@ var Confirm = function (_Component) {
 
   return Confirm;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+Confirm.defaultProps = {
+  okText: 'Yes, confirm!'
+};
 
 /* harmony default export */ __webpack_exports__["a"] = (Confirm);
 
@@ -26275,7 +26280,7 @@ var Alert = function Alert(_ref) {
         { className: 'modal-footer' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'button',
-          { type: 'button', onClick: onConfirm, className: 'btn btn-info' },
+          { type: 'button', onClick: onConfirm, className: 'btn btn-sm btn-info' },
           okText
         )
       )

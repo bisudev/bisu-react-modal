@@ -31,6 +31,7 @@ var Confirm = function (_Component) {
   Confirm.prototype.render = function render() {
     var _props = this.props,
         children = _props.children,
+        okText = _props.okText,
         onConfirm = _props.onConfirm,
         isOpen = _props.isOpen,
         pending = _props.pending;
@@ -74,9 +75,9 @@ var Confirm = function (_Component) {
             {
               type: 'button',
               onClick: onConfirm,
-              className: 'btn btn-danger'
+              className: 'btn btn-sm btn-danger'
             },
-            'Yes, confirm!'
+            okText
           )
         )
       )
@@ -85,5 +86,9 @@ var Confirm = function (_Component) {
 
   return Confirm;
 }(Component);
+
+Confirm.defaultProps = {
+  okText: 'Yes, confirm!'
+};
 
 export default Confirm;

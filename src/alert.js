@@ -17,7 +17,7 @@ const Alert = ({ children, okText, onConfirm, isOpen }) =>
         {children}
       </div>
       <div className="modal-footer">
-        <button type="button" onClick={onConfirm} className="btn btn-info">
+        <button type="button" onClick={onConfirm} className="btn btn-sm btn-info">
           {okText}
         </button>
       </div>
